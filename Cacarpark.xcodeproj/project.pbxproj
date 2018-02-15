@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747322035CF4D0087D528 /* AppDelegate.swift */; };
-		2CB747352035CF4D0087D528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747342035CF4D0087D528 /* ViewController.swift */; };
 		2CB747382035CF4D0087D528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747362035CF4D0087D528 /* Main.storyboard */; };
 		2CB7473A2035CF4D0087D528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747392035CF4D0087D528 /* Assets.xcassets */; };
 		2CB7473D2035CF4D0087D528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB7473B2035CF4D0087D528 /* LaunchScreen.storyboard */; };
 		2CB747482035CF4D0087D528 /* CacarparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747472035CF4D0087D528 /* CacarparkTests.swift */; };
 		2CB747532035CF4D0087D528 /* CacarparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747522035CF4D0087D528 /* CacarparkUITests.swift */; };
+		2CB747632035D54D0087D528 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747622035D54D0087D528 /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2CB7472F2035CF4C0087D528 /* Cacarpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cacarpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB747322035CF4D0087D528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CB747342035CF4D0087D528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CB747372035CF4D0087D528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CB747392035CF4D0087D528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CB7473C2035CF4D0087D528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		2CB7474E2035CF4D0087D528 /* CacarparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacarparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB747522035CF4D0087D528 /* CacarparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacarparkUITests.swift; sourceTree = "<group>"; };
 		2CB747542035CF4D0087D528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB747622035D54D0087D528 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB747312035CF4C0087D528 /* Cacarpark */,
+				2CB747602035D4B70087D528 /* Resources */,
 				2CB747462035CF4D0087D528 /* CacarparkTests */,
 				2CB747512035CF4D0087D528 /* CacarparkUITests */,
 				2CB747302035CF4C0087D528 /* Products */,
@@ -98,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				2CB747322035CF4D0087D528 /* AppDelegate.swift */,
-				2CB747342035CF4D0087D528 /* ViewController.swift */,
 				2CB747362035CF4D0087D528 /* Main.storyboard */,
 				2CB747392035CF4D0087D528 /* Assets.xcassets */,
 				2CB7473B2035CF4D0087D528 /* LaunchScreen.storyboard */,
@@ -123,6 +123,22 @@
 				2CB747542035CF4D0087D528 /* Info.plist */,
 			);
 			path = CacarparkUITests;
+			sourceTree = "<group>";
+		};
+		2CB747602035D4B70087D528 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CB747612035D4C30087D528 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CB747612035D4C30087D528 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2CB747622035D54D0087D528 /* logo.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB747632035D54D0087D528 /* logo.jpg in Resources */,
 				2CB7473D2035CF4D0087D528 /* LaunchScreen.storyboard in Resources */,
 				2CB7473A2035CF4D0087D528 /* Assets.xcassets in Resources */,
 				2CB747382035CF4D0087D528 /* Main.storyboard in Resources */,
@@ -259,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB747352035CF4D0087D528 /* ViewController.swift in Sources */,
 				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
