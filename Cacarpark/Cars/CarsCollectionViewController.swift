@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "carsCollectionViewCell"
 
-class CarsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, CarInfoDelegate {
+class CarsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, CarInfoDelegate, CarDeleteDelegate {
     
     
     
@@ -18,6 +18,11 @@ class CarsCollectionViewController: UICollectionViewController, UICollectionView
         let destination = storyboard?.instantiateViewController(withIdentifier: "carDetails") as! CarDetailsTableViewController
         destination.car = data.car(forId: id)
         show(destination, sender: self)
+    }
+    
+    func deleteCar(withId id: Int) {
+        data.deleteCar(withId: id)
+        collectionView?.reloadData()
     }
     
     override func viewDidLoad() {
@@ -71,6 +76,7 @@ class CarsCollectionViewController: UICollectionViewController, UICollectionView
         cell?.lbl_brand.text = car.brand
         cell?.carId = car.identifier
         cell?.carInfoDelegate = self
+        cell?.carDeleteDelegate = self
         
         
         // Configure the cell

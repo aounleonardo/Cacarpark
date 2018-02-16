@@ -22,6 +22,7 @@ class CarsCollectionViewCell: UICollectionViewCell {
     
     var carInfoDelegate: CarInfoDelegate?
     var carReserverDelegate: CarReserverDelegate?
+    var carDeleteDelegate: CarDeleteDelegate?
     
     @IBAction func btn_calendar(_ sender: UIButton) {
     }
@@ -29,6 +30,7 @@ class CarsCollectionViewCell: UICollectionViewCell {
         carInfoDelegate?.showCarInfo(carId: carId)
     }
     @IBAction func btn_delete(_ sender: UIButton) {
+        carDeleteDelegate?.deleteCar(withId: carId)
     }
     
     
@@ -37,6 +39,10 @@ class CarsCollectionViewCell: UICollectionViewCell {
 
 protocol CarInfoDelegate {
     func showCarInfo(carId id: Int)
+}
+
+protocol CarDeleteDelegate {
+    func deleteCar(withId id: Int)
 }
 
 protocol CarReserverDelegate {

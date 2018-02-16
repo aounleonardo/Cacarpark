@@ -42,6 +42,11 @@ class Data {
         clientId += 1
     }
     
+    func deleteCar(withId id: Int) {
+        cars = cars.filter() {$0.identifier != id}
+        reservations.removeReservations(forCarsWithId: id)
+    }
+    
     
     func car(forId id: Int) -> Car? {
         let filtered = cars.filter() {$0.identifier == id}
