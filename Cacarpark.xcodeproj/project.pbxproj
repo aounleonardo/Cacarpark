@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */; };
+		2C41BE032036641E009B93F3 /* CarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */; };
+		2C41BE0620366685009B93F3 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE0520366685009B93F3 /* Car.swift */; };
+		2C41BE0920366A00009B93F3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE0820366A00009B93F3 /* Data.swift */; };
 		2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747322035CF4D0087D528 /* AppDelegate.swift */; };
 		2CB747382035CF4D0087D528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747362035CF4D0087D528 /* Main.storyboard */; };
 		2CB7473A2035CF4D0087D528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747392035CF4D0087D528 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewController.swift; sourceTree = "<group>"; };
+		2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C41BE0520366685009B93F3 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		2C41BE0820366A00009B93F3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2CB7472F2035CF4C0087D528 /* Cacarpark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cacarpark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB747322035CF4D0087D528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB747372035CF4D0087D528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C41BDFE20366204009B93F3 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */,
+				2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		2C41BE0420366672009B93F3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2C41BE0520366685009B93F3 /* Car.swift */,
+				2C41BE0820366A00009B93F3 /* Data.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		2CB747262035CF4C0087D528 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +124,8 @@
 		2CB747312035CF4C0087D528 /* Cacarpark */ = {
 			isa = PBXGroup;
 			children = (
+				2C41BE0420366672009B93F3 /* Database */,
+				2C41BDFE20366204009B93F3 /* Cars */,
 				2CB747322035CF4D0087D528 /* AppDelegate.swift */,
 				2CB747362035CF4D0087D528 /* Main.storyboard */,
 				2CB747392035CF4D0087D528 /* Assets.xcassets */,
@@ -277,6 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
+				2C41BE0920366A00009B93F3 /* Data.swift in Sources */,
+				2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */,
+				2C41BE0620366685009B93F3 /* Car.swift in Sources */,
+				2C41BE032036641E009B93F3 /* CarsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
