@@ -14,6 +14,12 @@
 		2CB747482035CF4D0087D528 /* CacarparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747472035CF4D0087D528 /* CacarparkTests.swift */; };
 		2CB747532035CF4D0087D528 /* CacarparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747522035CF4D0087D528 /* CacarparkUITests.swift */; };
 		2CB747632035D54D0087D528 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747622035D54D0087D528 /* logo.jpg */; };
+		8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */; };
+		8B39F9E9203667B60040B768 /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E8203667B60040B768 /* ClientTableViewController.swift */; };
+		8B39F9EB20366BF50040B768 /* ClientDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */; };
+		8B39F9ED20366C1A0040B768 /* ClientDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */; };
+		8B39F9F020366D510040B768 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EF20366D510040B768 /* Client.swift */; };
+		8B39F9F220366F740040B768 /* CheckBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9F120366F740040B768 /* CheckBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		2CB747522035CF4D0087D528 /* CacarparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacarparkUITests.swift; sourceTree = "<group>"; };
 		2CB747542035CF4D0087D528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB747622035D54D0087D528 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		8B39F9E8203667B60040B768 /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
+		8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsTableViewController.swift; sourceTree = "<group>"; };
+		8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		8B39F9EF20366D510040B768 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		8B39F9F120366F740040B768 /* CheckBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		2CB747262035CF4C0087D528 = {
 			isa = PBXGroup;
 			children = (
+				8B39F9EE20366CBE0040B768 /* Database */,
 				2CB747312035CF4C0087D528 /* Cacarpark */,
 				2CB747602035D4B70087D528 /* Resources */,
 				2CB747462035CF4D0087D528 /* CacarparkTests */,
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB747322035CF4D0087D528 /* AppDelegate.swift */,
+				8B39F9DF203665350040B768 /* Client */,
 				2CB747362035CF4D0087D528 /* Main.storyboard */,
 				2CB747392035CF4D0087D528 /* Assets.xcassets */,
 				2CB7473B2035CF4D0087D528 /* LaunchScreen.storyboard */,
@@ -139,6 +153,26 @@
 				2CB747622035D54D0087D528 /* logo.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		8B39F9DF203665350040B768 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */,
+				8B39F9E8203667B60040B768 /* ClientTableViewController.swift */,
+				8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */,
+				8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		8B39F9EE20366CBE0040B768 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8B39F9EF20366D510040B768 /* Client.swift */,
+				8B39F9F120366F740040B768 /* CheckBook.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B39F9F220366F740040B768 /* CheckBook.swift in Sources */,
+				8B39F9E9203667B60040B768 /* ClientTableViewController.swift in Sources */,
+				8B39F9EB20366BF50040B768 /* ClientDetailsTableViewController.swift in Sources */,
+				8B39F9F020366D510040B768 /* Client.swift in Sources */,
 				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
+				8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */,
+				8B39F9ED20366C1A0040B768 /* ClientDetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
