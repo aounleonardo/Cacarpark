@@ -48,7 +48,7 @@
         <!--Clients-->
         <scene sceneID="H4w-F5-cbG">
             <objects>
-                <viewController id="uFb-rn-EzQ" sceneMemberID="viewController">
+                <viewController id="uFb-rn-EzQ" customClass="ClientTableViewController" customModule="Cacarpark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvX-Sg-feM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
         <!--Table View Controller-->
         <scene sceneID="e2d-Bv-nBv">
             <objects>
-                <tableViewController id="rzX-7y-4LZ" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ClientDetails" id="rzX-7y-4LZ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Ss-Iq-R94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
