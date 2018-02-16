@@ -21,7 +21,6 @@
 		8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */; };
 		8B39F9E9203667B60040B768 /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E8203667B60040B768 /* ClientTableViewController.swift */; };
 		8B39F9EB20366BF50040B768 /* ClientDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */; };
-		8B39F9ED20366C1A0040B768 /* ClientDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */; };
 		8B39F9F020366D510040B768 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EF20366D510040B768 /* Client.swift */; };
 		8B39F9F220366F740040B768 /* CheckBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9F120366F740040B768 /* CheckBook.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
 		8B39F9E8203667B60040B768 /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
 		8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsTableViewController.swift; sourceTree = "<group>"; };
-		8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		8B39F9EF20366D510040B768 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		8B39F9F120366F740040B768 /* CheckBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,7 +188,6 @@
 				8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */,
 				8B39F9E8203667B60040B768 /* ClientTableViewController.swift */,
 				8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */,
-				8B39F9EC20366C1A0040B768 /* ClientDetailsTableViewCell.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -336,7 +333,6 @@
 				8B39F9F020366D510040B768 /* Client.swift in Sources */,
 				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
 				8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */,
-				8B39F9ED20366C1A0040B768 /* ClientDetailsTableViewCell.swift in Sources */,
 				2C41BE0920366A00009B93F3 /* Data.swift in Sources */,
 				2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */,
 				2C41BE0620366685009B93F3 /* Car.swift in Sources */,

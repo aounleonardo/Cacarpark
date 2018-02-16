@@ -10,9 +10,30 @@ import UIKit
 
 class ClientDetailsTableViewController: UITableViewController {
     
-    var client = Data().clients[0]
+    var client : Client?
+    
+    @IBOutlet weak var lbl_firstName: UILabel!
+    @IBOutlet weak var lbl_lastName: UILabel!
+    @IBOutlet weak var lbl_birthDate: UILabel!
+    @IBOutlet weak var lbl_address: UILabel!
+    @IBOutlet weak var lbl_email: UILabel!
+    @IBOutlet weak var lbl_phoneNumber: UILabel!
+    @IBOutlet weak var lbl_carsHistory: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let c = client {
+            lbl_firstName.text = c.firstName
+            lbl_lastName.text = c.lastName
+            lbl_email.text = c.email
+            lbl_address.text = c.adress
+            lbl_birthDate.text = c.birthDate
+            lbl_phoneNumber.text = c.phoneNumber
+            var numberOfCar = 0
+            numberOfCar = data.reservations.getCarsForClient(client: c).count
+            lbl_carsHistory.text = NSString(format : "%d cars rented", numberOfCar) as String
+            
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,17 +47,6 @@ class ClientDetailsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

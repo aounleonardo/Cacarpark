@@ -52,7 +52,7 @@ class ClientTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as? ClientTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClientTableViewCell", for: indexPath) as? ClientTableViewCell
         cell?.lbl_firstName.text = clients[indexPath.row].firstName
         cell?.lbl_lastName.text = clients[indexPath.row].lastName
         cell?.lbl_email.text = clients[indexPath.row].email
