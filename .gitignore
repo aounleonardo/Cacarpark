@@ -7,6 +7,13 @@
 *.DS_STORE
 *.storyboard
 
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
 
 ## Build generated
 build/

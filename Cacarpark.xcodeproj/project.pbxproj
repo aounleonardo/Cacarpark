@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1E12FC203716DD00F92C2C /* AddClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E12FB203716DD00F92C2C /* AddClientTableViewController.swift */; };
 		2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */; };
 		2C41BE032036641E009B93F3 /* CarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */; };
 		2C41BE0620366685009B93F3 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41BE0520366685009B93F3 /* Car.swift */; };
@@ -18,6 +19,8 @@
 		2CB747482035CF4D0087D528 /* CacarparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747472035CF4D0087D528 /* CacarparkTests.swift */; };
 		2CB747532035CF4D0087D528 /* CacarparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB747522035CF4D0087D528 /* CacarparkUITests.swift */; };
 		2CB747632035D54D0087D528 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB747622035D54D0087D528 /* logo.jpg */; };
+		2CD2FB3D2036D3F400DEC139 /* CarDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2FB3C2036D3F400DEC139 /* CarDetailsTableViewController.swift */; };
+		2CD2FB3F2036E9EA00DEC139 /* AddCarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2FB3E2036E9EA00DEC139 /* AddCarTableViewController.swift */; };
 		8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */; };
 		8B39F9E9203667B60040B768 /* ClientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9E8203667B60040B768 /* ClientTableViewController.swift */; };
 		8B39F9EB20366BF50040B768 /* ClientDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */; };
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1E12FB203716DD00F92C2C /* AddClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientTableViewController.swift; sourceTree = "<group>"; };
 		2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewController.swift; sourceTree = "<group>"; };
 		2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C41BE0520366685009B93F3 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		2CB747522035CF4D0087D528 /* CacarparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacarparkUITests.swift; sourceTree = "<group>"; };
 		2CB747542035CF4D0087D528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB747622035D54D0087D528 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		2CD2FB3C2036D3F400DEC139 /* CarDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsTableViewController.swift; sourceTree = "<group>"; };
+		2CD2FB3E2036E9EA00DEC139 /* AddCarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarTableViewController.swift; sourceTree = "<group>"; };
 		8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
 		8B39F9E8203667B60040B768 /* ClientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewController.swift; sourceTree = "<group>"; };
 		8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 			children = (
 				2C41BE002036627D009B93F3 /* CarsCollectionViewController.swift */,
 				2C41BE022036641E009B93F3 /* CarsCollectionViewCell.swift */,
+				2CD2FB3C2036D3F400DEC139 /* CarDetailsTableViewController.swift */,
+				2CD2FB3E2036E9EA00DEC139 /* AddCarTableViewController.swift */,
 			);
 			path = Cars;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 				8B39F9E62036677D0040B768 /* ClientTableViewCell.swift */,
 				8B39F9E8203667B60040B768 /* ClientTableViewController.swift */,
 				8B39F9EA20366BF50040B768 /* ClientDetailsTableViewController.swift */,
+				2C1E12FB203716DD00F92C2C /* AddClientTableViewController.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -327,16 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
+				2C41BE0920366A00009B93F3 /* Data.swift in Sources */,
+				2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */,
+				2CD2FB3F2036E9EA00DEC139 /* AddCarTableViewController.swift in Sources */,
+				2C41BE032036641E009B93F3 /* CarsCollectionViewCell.swift in Sources */,
+				2CD2FB3D2036D3F400DEC139 /* CarDetailsTableViewController.swift in Sources */,
 				8B39F9F220366F740040B768 /* CheckBook.swift in Sources */,
 				8B39F9E9203667B60040B768 /* ClientTableViewController.swift in Sources */,
 				8B39F9EB20366BF50040B768 /* ClientDetailsTableViewController.swift in Sources */,
 				8B39F9F020366D510040B768 /* Client.swift in Sources */,
-				2CB747332035CF4D0087D528 /* AppDelegate.swift in Sources */,
+				2C1E12FC203716DD00F92C2C /* AddClientTableViewController.swift in Sources */,
 				8B39F9E72036677D0040B768 /* ClientTableViewCell.swift in Sources */,
-				2C41BE0920366A00009B93F3 /* Data.swift in Sources */,
-				2C41BE012036627D009B93F3 /* CarsCollectionViewController.swift in Sources */,
 				2C41BE0620366685009B93F3 /* Car.swift in Sources */,
-				2C41BE032036641E009B93F3 /* CarsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
