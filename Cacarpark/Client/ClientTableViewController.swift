@@ -10,8 +10,7 @@ import UIKit
 
 class ClientTableViewController: UITableViewController {
     
-    var clients:[Client]
-
+    var clients = data.clients
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,29 +30,36 @@ class ClientTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return clients.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let clientSelected = clients[indexPath.row]
+        let cellSelected = tableView.cellForRow(at: indexPath) as? ClientTableViewCell
+        let clientSelected : Client? = data.clientForId(id : (cellSelected?.idClient)!)
         let controller = storyboard?.instantiateViewController(withIdentifier: "ClientDetails") as? ClientDetailsTableViewController
-        controller. = 
+        controller?.client = clientSelected!
         show(controller!, sender: self)
     }
-    /*
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as? ClientTableViewCell
+        cell?.lbl_firstName.text = clients[indexPath.row].firstName
+        cell?.lbl_lastName.text = clients[indexPath.row].lastName
+        cell?.lbl_email.text = clients[indexPath.row].email
+        cell?.idClient = clients[indexPath.row].identifier
+        return cell!
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

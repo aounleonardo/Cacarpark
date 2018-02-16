@@ -10,7 +10,7 @@ import UIKit
 
 class ClientDetailsTableViewController: UITableViewController {
     
-    
+    var client = Data().clients[0]
     override func viewDidLoad() {
         super.viewDidLoad()
 

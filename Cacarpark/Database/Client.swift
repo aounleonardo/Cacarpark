@@ -15,15 +15,15 @@ class Client {
     var adress : String
     var email : String
     var phoneNumber : String
-    var id : Int
+    var identifier : Int
     
-    init(){
-        firstName = ""
-        lastName = ""
-        birthDate = ""
-        adress = ""
-        email = ""
-        phoneNumber = ""
-        id = -1
+    init(identifier id : Int, firstName fn : String, lastName ln : String, birthDate bd : String, adress a : String, email e : String, phoneNumber p : String){
+        firstName = fn
+        lastName = ln
+        birthDate = bd
+        adress = a
+        email = e
+        phoneNumber = p
+        identifier = id
     }
 }

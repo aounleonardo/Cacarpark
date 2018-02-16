@@ -10,6 +10,10 @@ import UIKit
 
 class ClientTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lbl_firstName: UILabel!
+    @IBOutlet weak var lbl_lastName: UILabel!
+    @IBOutlet weak var lbl_email: UILabel!
+    var idClient : Int?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

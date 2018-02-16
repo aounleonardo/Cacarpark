@@ -11,14 +11,14 @@ import Foundation
 class CheckBook {
     var reservation : [(car: Car, client : Client)]
     
-    init(){
-        reservation = []
+    init(myTuples : [(car: Car, client : Client)]){
+        reservation = myTuples
     }
     func getCarsForClient(client : Client) -> [Car]{
         var carsForClient : [Car] = []
         for count in 0..<reservation.count{
-            if reservation[count].2.id  == client.id {
-                carsForClient.append(reservation[count].1) //Faut faire un Set
+            if reservation[count].1.identifier  == client.identifier {
+                carsForClient.append(reservation[count].0) //Faut faire un Set
             }
         }
         return carsForClient
