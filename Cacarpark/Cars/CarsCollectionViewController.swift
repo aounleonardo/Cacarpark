@@ -14,12 +14,9 @@ class CarsCollectionViewController: UICollectionViewController, UICollectionView
     
     
     
-    
-    var cars = Data().cars
-    
     func showCarInfo(carId id: Int) {
         let destination = storyboard?.instantiateViewController(withIdentifier: "carDetails") as! CarDetailsTableViewController
-        destination.car = cars[id]
+        destination.car = data.car(forId: id)
         show(destination, sender: self)
     }
     
@@ -33,6 +30,10 @@ class CarsCollectionViewController: UICollectionViewController, UICollectionView
         //    self.collectionView!.register(CarsCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        collectionView?.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,13 +69,13 @@ class CarsCollectionViewController: UICollectionViewController, UICollectionView
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return cars.count
+        return data.cars.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CarsCollectionViewCell
         
-        let car = cars[indexPath.row]
+        let car = data.cars[indexPath.row]
         
         cell?.lbl_available.text = car.isFree ? "1" : "0"
         cell?.lbl_model.text = car.model
