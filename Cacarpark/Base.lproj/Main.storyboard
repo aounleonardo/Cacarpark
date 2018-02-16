@@ -92,7 +92,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rzX-7y-4LZ" kind="show" id="RkJ-ok-wO3"/>
+                                            <segue destination="rzX-7y-4LZ" kind="show" identifier="segClientsToDetails" id="RkJ-ok-wO3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -111,7 +111,7 @@
                     <navigationItem key="navigationItem" title="Clients" id="HVn-if-OKB">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="Rmo-yT-9EE">
                             <connections>
-                                <segue destination="XyT-Eh-R7h" kind="show" id="NAu-cU-vGz"/>
+                                <segue destination="XyT-Eh-R7h" kind="show" identifier="segClientsToNewClient" id="NAu-cU-vGz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="MIZ-cC-3uP"/>
@@ -401,7 +401,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="i"/>
                                                     <connections>
-                                                        <segue destination="cDP-3v-CQt" kind="show" id="U3i-Zv-MX7"/>
+                                                        <segue destination="cDP-3v-CQt" kind="show" identifier="segCarDetails" id="U3i-Zv-MX7"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dS-YD-DEW">
@@ -421,13 +421,13 @@
                     <navigationItem key="navigationItem" title="Cars" id="dNS-17-rQI">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="Fn8-ZO-17q">
                             <connections>
-                                <segue destination="yxc-vB-AP0" kind="show" id="vdP-nM-gEb"/>
+                                <segue destination="yxc-vB-AP0" kind="show" identifier="segCarsToNewCars" id="vdP-nM-gEb"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="8St-9v-kd4"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="SNx-vh-5WQ" kind="show" id="NM0-0e-VcH"/>
+                        <segue destination="SNx-vh-5WQ" kind="show" identifier="segCarsToCalendar" id="NM0-0e-VcH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUh-GV-2Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,7 +446,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calendar" id="7xc-Ru-rwp"/>
                     <connections>
-                        <segue destination="PIj-ZK-gTA" kind="show" id="WlQ-nj-nMd"/>
+                        <segue destination="PIj-ZK-gTA" kind="show" identifier="segCalendarToRenter" id="WlQ-nj-nMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otO-g8-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -606,7 +606,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Reserve"/>
                                                     <connections>
-                                                        <segue destination="SNx-vh-5WQ" kind="show" id="jwQ-7Q-ZHA"/>
+                                                        <segue destination="SNx-vh-5WQ" kind="show" identifier="segDetailsToCalendar" id="jwQ-7Q-ZHA"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1005,6 +1005,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NM0-0e-VcH"/>
+        <segue reference="jwQ-7Q-ZHA"/>
     </inferredMetricsTieBreakers>
 </document>
