@@ -23,7 +23,7 @@ class ClientDetailsTableViewController: UITableViewController {
         if let c = client {
             let destination = storyboard?.instantiateViewController(withIdentifier: "carsCollectionViewController")as! CarsCollectionViewController
             let carFilter = CarFilter(client: c, withController: destination)
-            destination.collectionView?.dataSource = carFilter
+            destination.cars = carFilter.carsToReturn
             destination.navigationItem.leftBarButtonItem = nil
             show(destination, sender: self)
         }

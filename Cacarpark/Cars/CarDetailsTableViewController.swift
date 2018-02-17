@@ -36,7 +36,6 @@ class CarDetailsTableViewController: UITableViewController {
             
             lbl_disponibility.text = c.isFree ? "1" : "0"
         }
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
